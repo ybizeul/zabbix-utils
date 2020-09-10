@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/lib/zabbix/externalscripts/ssl-cert-check -s $1 -p 443 -b|sed -E 's/.* ([0-9]+) *$/\1/'

@@ -1,0 +1,12 @@
+#!/bin/sh
+# Run "zabbixify myIcon.png" to generate all the sizes needed
+
+IMG=$1
+
+extension="${IMG##*.}"
+filename="${IMG%.*}"
+
+for s in 512 128 96 64 48 24
+do
+        sips $IMG -Z $s --out "${filename}_(${s}).png"
+done

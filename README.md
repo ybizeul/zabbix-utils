@@ -1,1 +1,1 @@
-# zabiix-utils
+# zabbix-utils
